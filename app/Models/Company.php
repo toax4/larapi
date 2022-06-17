@@ -12,6 +12,6 @@ class Company extends Model
 
     public function ebillets()
     {
-        return $this->hasMany(Ebillet::class);
+        return $this->hasMany(Ebillet::class, 'company_id', 'id');
     }
 }
