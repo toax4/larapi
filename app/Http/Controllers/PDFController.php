@@ -23,7 +23,7 @@ class PDFController extends Controller
 
         $pdf = app('dompdf.wrapper');
         // $pdf = PDF::loadView('myPDF', $data);
-        $pdf->loadView('myPDF', $data);
+        $pdf->loadView('facture', $data);
 
         return $pdf->download('test.pdf');
     }
